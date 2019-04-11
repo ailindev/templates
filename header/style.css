@@ -6,8 +6,16 @@
    height: 100%;
 }
 
-.flex-center {
+.flex-wrap {
+   position: relative;
    display: flex;
+   flex-direction: column;
+   align-items: center;
+   width: 100%;
+   height: 100%;
+}
+
+.flex-center {
    margin: auto;
 }
 
@@ -23,16 +31,52 @@
    background-position: center;
    background-repeat: no-repeat;
 }
+.header .container {
+   position: relative;
+}
 
 .header-composition {
-   margin: auto;
    text-align: center;
    color: #fff;
    font-size: 1.2em;
 }
+
 .header-composition p {
    margin-bottom: .6em;
 }
+
 .s-example {
    padding: 6em 0;
+}
+
+.top {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   margin: 0 auto;
+   padding: 2.2em 1em 0;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+
+.top .logo {
+   display: flex;
+   width: 82px;
+   height: 32px;
+}
+
+.navigation {
+   display: none;
+}
+
+
+@media only screen and (max-width: 768px) {
+
+   .top {
+      position: relative;
+      padding: 1.4em 1em;
+   }
+
 }
