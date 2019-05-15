@@ -54,14 +54,8 @@ $(function() {
          }, 800, 'swing');
       }
 
-
-
-
       e.preventDefault();
    });
-
-
-
 
 
    // Cache selectors

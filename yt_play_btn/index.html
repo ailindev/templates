@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+   <meta charset="utf-8">
+   <!-- <base href="/"> -->
+
+   <title>New Life</title>
+   <meta name="description" content="">
+
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+
+   <!-- Template Basic Images Start -->
+   <meta property="og:image" content="path/to/image.jpg">
+   <link rel="icon" href="img/favicon/favicon.ico">
+   <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png">
+   <!-- Template Basic Images End -->
+
+   <!-- Custom Browsers Color Start -->
+   <meta name="theme-color" content="#000">
+   <!-- Custom Browsers Color End -->
+
+   <!-- Include Bootstrap-->
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+   <!-- Custom styles -->
+   <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+<!-- Чтобы все работало: подключенный bootstrap, jquery, и отдельный файл js для iframe
+без обертки $(function(){...}); если что-то не работает, виноват порядок подключения -->
+<div class="embed-responsive embed-responsive-16by9 position-relative">
+   <!-- Вставить видео перед ссылку на видео перед вопросом -->
+   <iframe id="videoPlayer" class="embed-responsive-item"
+           src="https://www.youtube.com/embed/wVJhIpFoaTk?enablejsapi=1&amp;html5=1&amp;rel=0&amp;&amp;showinfo=0"
+           allowfullscreen></iframe>
+   <div id="videoPlayBtn"></div>
+</div>
+
+<script
+        src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous"></script>
+<script src="script.js"></script>
+<script src="iframe-yt-button.js"></script>
+</body>
+</html>
